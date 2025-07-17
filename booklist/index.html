@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library Book List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    h1 {
+      text-align: center;
+    }
+    .book {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .book h3 {
+      margin-top: 0;
+    }
+    .available {
+      color: green;
+    }
+    .unavailable {
+      color: red;
+    }
+  </style>
+</style>
+<body>
+
+  <h1>Library Book List</h1>
+  <div id="book-list">Loading books...</div>
+
+  <script>
+    async function loadBooks() {
+      try {
+        const res = await fetch('https://ebary.pages.dev/booklist/books.txt');
+        const text = await res.text();
+        const items = text.split('</>').map(raw => raw.trim()).filter(Boolean);
+
+        const books = items.map(block => {
+          const lines = block.split('\n').map(l => l.trim()).filter(Boolean);
+          const title = lines[0].replace(/^<|>$/g, '');
+          const info = {};
+
+          lines.slice(1).forEach(line => {
+            if (line === '.is available') {
+              info.available = true;
+            } else if (line === '.is not available') {
+              info.available = false;
+            } else if (line.startsWith('.dateCheckedOut ')) {
+              info.dateCheckedOut = line.replace('.dateCheckedOut ', '');
+            } else if (line.startsWith('.checkedOutBy ')) {
+              info.checkedOutBy = line.replace('.checkedOutBy ', '');
+            }
+          });
+
+          return { title, ...info };
+        });
+
+        renderBooks(books);
+      } catch (err) {
+        document.getElementById('book-list').innerText = 'Failed to load book list.';
+        console.error(err);
+      }
+    }
+
+    function renderBooks(list) {
+      const container = document.getElementById('book-list');
+      container.innerHTML = ''; // Clear loading text
+
+      if (list.length === 0) {
+        container.innerHTML = '<p>No books found.</p>';
+        return;
+      }
+
+      list.forEach(b => {
+        const div = document.createElement('div');
+        div.className = 'book';
+        div.innerHTML = `
+          <h3>${b.title}</h3>
+          <p class="${b.available ? 'available' : 'unavailable'}">
+            Status: <strong>${b.available ? 'Available' : 'Checked Out'}</strong>
+          </p>
+          ${!b.available ? `
+            <p>Checked out by <strong>${b.checkedOutBy || 'Unknown'}</strong> on <strong>${b.dateCheckedOut || 'Unknown date'}</strong></p>
+          ` : ''}
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    loadBooks();
+  </script>
+
+</body>
+</html>
