@@ -1,0 +1,169 @@
+<Vampirina: Party Fun>
+.is available
+</>
+
+<Puppy Dog Pals>
+.is available
+</>
+
+<Vampirina: A Few New Friends>
+.is available
+</>
+
+<Mickey: A nice surprise>
+.is available
+</>
+
+<Lion Gaurd: Kion and Friends>
+.is not available
+.dateCheckedOut ER-NO-404!
+.checkedOutBy Kani
+</>
+
+<Fancy Nancy: Top Dog>
+.is available
+</>
+
+<Home for Meow: The Purrfect show>
+.is not available
+.dateCheckedOut ER-NO-404!
+.checkedOutBy Shr
+</>
+
+<Home for Meow: Show + Tail>
+.is not available
+.dateCheckedOut 07-07-2025
+.checkedOutBy Sa
+</>
+
+<Pete The Cat: Snow Daze>
+.is not available
+.dateCheckedOut 06-20-2025
+.checkedOutBy Shr
+</>
+
+<Pete The Cat: Play Ball>
+.is available
+</>
+
+<Pete The Kitty: Goes to The Doctor>
+.is available
+</>
+
+<Chickens Aren't The Only Ones>
+.is not available
+.dateCheckedOut ER-NO-404!
+.checkedOutBy Kush
+</>
+
+<Plants That Never Ever Bloom>
+.is not available
+.dateCheckedOut ER-NO-404!
+.checkedOutBy Kani
+</>
+
+<The Donkey Who Carried a King>
+.is available
+</>
+
+<Jhon Philip Duck>
+.is not available
+.dateCheckedOut ER-NO-404!
+.checkedOutBy Kush
+</>
+
+<Go Dance>
+.is not available
+.dateCheckedOut 07-16-2025
+.checkedOutBy Bind
+</>
+
+<Junior Great Books>
+.is available
+</>
+
+<Penguins!>
+.is available
+</>
+
+<Spiderman: Tie your shoes>
+.is not available
+.dateCheckedOut ER-NO-404!
+.checkedOutBy Kush
+</>
+
+<A-Z Mysteries: Mayflower Treasure>
+.is not available
+.dateCheckedOut 07-03-2025
+.checkedOutBy Ri
+</>
+
+<Boots>
+.is not available
+.dateCheckedOut 07-16-2025
+.checkedOutBy Bind
+</>
+
+<My Best Friend is a Ghost>
+.is not available
+.dateCheckedOut ER-NO-404!
+.checkedOutBy Kush
+</>
+
+<Governer's Mansion>
+.is available
+</>
+
+<A Tune for My mother>
+.is available
+</>
+
+<Diary Of a Whimpy Kid #18>
+.is not available
+.dateCheckedOut ER-NO-404!
+.checkedOutBy Aar
+</>
+
+<Kindness Kitten>
+.is not available
+.dateCheckedOut ER-NO-404!
+.checkedOutBy Ashv
+</>
+
+<Proud Mouse>
+.is not available
+.dateCheckedOut 07-14-2025
+.checkedOutBy Nirv
+</>
+
+<Watch Out Below>
+.is not available
+.dateCheckedOut ER-NO-404!
+.checkedOutBy Aar
+</>
+
+<Spidey and his amazing friends>
+.is available
+</>
+
+<Sophia the Golden Unicorn>
+.is not available
+.dateCheckedOut 07-14-2025
+.checkedOutBy Nirv
+</>
+
+<Edward Tulane>
+.is available
+</>
+
+<A Little Princess>
+.is available
+</>
+
+<The 1000 Years Old Boy>
+.is available
+</>
+
+<The Big Box>
+.is available
+</>
